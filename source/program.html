@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+<header class="page-header">
+
+  <a class="page-header__logo" href="#">
+    <img src="#" class="page-header__logo-image" width="100" height="100" alt="Кэт Энерджи">
+  </a>
+
+
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="site-list__item">
+        <a href="catalog.html">Каталог продукции</a>
+      </li>
+      <li class="site-list__item site-list__item--active">
+        <a>Подбор программы</a>
+      </li>
+    </ul>
+  </nav>
+
+
+</header>
+<main class="page-main">
+  <section class="program-selecting">
+    <h2 class="program-selecting__title">Подбор программы</h2>
+    <p class="program-selecting__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <form class="program-selecting__form form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__fieldset form-person">
+        <label><span class="form-person__label">Имя:<sup>*</sup></span>
+          <input class="form-person__input" type="text" name="name" placeholder="Барсик"
+                 autocomplete="off" autofocus required>
+        </label>
+        <label><span class="form-person__label">Вес (кг):<sup>*</sup></span>
+          <input class="form-person__input" type="text" name="width" placeholder="7"
+                 autocomplete="off" required>
+        </label>
+        <label><span class="form-person__label">Возраст (лет):</span>
+          <input class="form-person__input" type="text" name="age" placeholder="7"
+                 autocomplete="off">
+        </label>
+
+      </fieldset>
+      <fieldset class="form__fieldset form-radio">
+
+        <label class="form-radio__item">
+          <input class="form-radio__radiobutton" type="radio" name="losing-weight" checked>
+          <span class="form-radio__label">Похудение</span>
+        </label>
+
+        <label class="form-radio__item">
+          <input class="form-radio__radiobutton" type="radio" name="weight-set">
+          <span class="form-radio__label">Набор массы</span>
+        </label>
+
+        <label class="form-radio__item">
+          <input class="form-radio__radiobutton" type="radio" name="not-defined">
+          <span class="form-radio__label">Не знаю (нужен ваш совет)</span>
+        </label>
+
+
+      </fieldset>
+      <fieldset class="form__fieldset form-contact">
+        <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <label><span class="form-contact__label">E-mail:<sup>*</sup></span>
+          <input class="form-contact__input" type="email" name="name" placeholder="kuklachev@gmail.com"
+                 autocomplete="off" required>
+        </label>
+      </fieldset>
+    </form>
+  </section>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__logo" href="#">
+    <img src="#" class="page-footer__logo-image" width="100" height="100" alt="Кэт Энерджи">
+  </a>
+  <ul class="page-footer__social social">
+    <li class="social__item social__item--vk">
+      <a href="#" title="Вконтакте"></a>
+    </li>
+    <li class="social__item social__item--inst">
+      <a href="#" title="Инстаграм"></a>
+    </li>
+    <li class="social__item social__item--fb">
+      <a href="#" title="Фейсбук"></a>
+    </li>
+  </ul>
+  <div class="developer">
+    <p class="developer__name">HTML Academy</p>
+    <a class="developer__logo">
+      <img src="#" class="developer__logo-image" width="100" height="100" alt="HTML Academy">
+    </a>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -5,8 +5,119 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
+    <header class="page-header">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <a class="page-header__logo" href="#">
+        <img src="#" class="page-header__logo-image" width="100" height="100" alt="Кэт Энерджи">
+      </a>
+
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="program.html">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    </header>
+    <main class="page-main">
+      <section class="main-banner">
+        <h1 class="main-banner__main-title">
+          Функциональное питание для котов
+        </h1>
+        <p class="main-banner__description">
+          Занялся собой? Займись котом!
+        </p>
+        <img class="main-banner__image" src="#" alt="Банка питания для котов">
+        <a class="main-banner__button button" href="#">Подобрать программу</a>
+      </section>
+      <section class="program">
+        <h2 class="visually-hidden">Наши программы питания</h2>
+        <article class="program__item program__item--slim">
+          <h3 class="program__title">Похудение</h3>
+          <p class="program__description"> блаблаблаблаблаблаларврылвл</p>
+          <a class="program__link" href="#">Каталог Slim</a>
+        </article>
+        <article class="program__item program__item--pro">
+          <h3 class="program__title">Набор массы</h3>
+          <p class="program__description"> блаблаблаблаблаблаларврылвл</p>
+          <a class="program__link" href="#">Каталог Pro</a>
+        </article>
+      </section>
+      <section class="about">
+        <ul class="about__list">
+          <li class="about__item about__item--composition">
+            <p class="about__description">Функциональное питание содержит только полезные и питательные вещества</p>
+          </li>
+          <li class="about__item about__item--form">
+            <p class="about__description">Выпускается в виде порошка, который нужно просто залить кипятком и готово</p>
+          </li>
+          <li class="about__item about__item--use">
+            <p class="about__description">Замените один-два приема обычной еды на наше функциональное питание</p>
+          </li>
+          <li class="about__item about__item--period">
+            <p class="about__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца</p>
+          </li>
+        </ul>
+      </section>
+      <section class="example">
+        <h2 class="example__title">
+          Живой пример
+        </h2>
+        <p class="example__description">
+          Кот Борис сбросил 5кг за 2 месяца, просто заменив свой обычный корм...
+        </p>
+        <p class="example__progress">5кг <span class="example__progress-description">снижение веса</span></p>
+        <p class="example__progress">60 дней <span class="example__progress-description">затрачено времени</span></p>
+        <p class="example__total-price">Затраты на питание: 15 000 руб.</p>
+        <img class="example__photo" src="#" alt="Кот до и после перехода на функциональное питание">
+        <p class="example__progress-bar progress-bar">
+          <span class="progress-bar__word">Было</span>
+          <div class="progress-bar__bar"></div>
+          <span class="progress-bar__word">Стало</span>
+        </p>
+      </section>
+      <section class="contacts">
+        <div class="collaboration">
+          <p class="collaboration__title">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="collaboration__contacts">ул. Большая Конюшенная, д.19/8<br> Санкт-Петербург</p>
+        </div>
+        <div class="map"></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img src="#" class="page-footer__logo-image" width="100" height="100" alt="Кэт Энерджи">
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item social__item--vk">
+          <a href="#" title="Вконтакте"></a>
+        </li>
+        <li class="social__item social__item--inst">
+          <a href="#" title="Инстаграм"></a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#" title="Фейсбук"></a>
+        </li>
+      </ul>
+      <div class="developer">
+        <p class="developer__name">HTML Academy</p>
+        <a class="developer__logo">
+          <img src="#" class="developer__logo-image" width="100" height="100" alt="HTML Academy">
+        </a>
+      </div>
+
+    </footer>
 
   </body>
 </html>
