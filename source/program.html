@@ -35,43 +35,78 @@
     <h2 class="program-selecting__title">Подбор программы</h2>
     <p class="program-selecting__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="program-selecting__form form" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="form__fieldset form-person">
-        <label><span class="form-person__label">Имя:<sup>*</sup></span>
-          <input class="form-person__input" type="text" name="name" placeholder="Барсик" autocomplete="off" autofocus required>
-        </label>
-        <label><span class="form-person__label">Вес (кг):<sup>*</sup></span>
-          <input class="form-person__input" type="text" name="width" placeholder="7" autocomplete="off" required>
-        </label>
-        <label><span class="form-person__label">Возраст (лет):</span>
-          <input class="form-person__input" type="text" name="age" placeholder="7" autocomplete="off">
-        </label>
 
+      <fieldset class="form__fieldset form__fieldset--person">
+        <label><span class="form__label form__label--person">Имя:<sup>*</sup></span>
+          <input class="form__input form__input--person" type="text" name="name" placeholder="Барсик" autocomplete="off" autofocus required>
+        </label>
+        <label><span class="form__label form__label--person">Вес (кг):<sup>*</sup></span>
+          <input class="form__input form__input--person" type="text" name="width" placeholder="7" autocomplete="off" required>
+        </label>
+        <label><span class="form__label form__label--person">Возраст (лет):</span>
+          <input class="form__input form__input--person" type="text" name="age" placeholder="7" autocomplete="off">
+        </label>
       </fieldset>
-      <fieldset class="form__fieldset form-radio">
 
-        <label class="form-radio__item">
-          <input class="form-radio__radiobutton" type="radio" name="losing-weight" checked>
-          <span class="form-radio__label">Похудение</span>
+      <fieldset class="form__fieldset form__fieldset--radio">
+
+        <label>
+          <input class="form__input form__input--radio" type="radio" name="radio" value="losing" checked>
+          <span class="form__label form__label--radio">Похудение</span>
         </label>
 
-        <label class="form-radio__item">
-          <input class="form-radio__radiobutton" type="radio" name="weight-set">
-          <span class="form-radio__label">Набор массы</span>
+        <label>
+          <input class="form__input form__input--radio" type="radio" name="radio" value="set">
+          <span class="form__label form__label--radio">Набор массы</span>
         </label>
 
-        <label class="form-radio__item">
-          <input class="form-radio__radiobutton" type="radio" name="not-defined">
-          <span class="form-radio__label">Не знаю (нужен ваш совет)</span>
+        <label>
+          <input class="form__input form__input--radio" type="radio" name="radio" value="unknow">
+          <span class="form__label form__label--radio">Не знаю (нужен ваш совет)</span>
         </label>
-
-
       </fieldset>
-      <fieldset class="form__fieldset form-contact">
+
+
+      <fieldset class="form__fieldset form__fieldset--contact">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
-        <label><span class="form-contact__label">E-mail:<sup>*</sup></span>
-          <input class="form-contact__input" type="email" name="name" placeholder="kuklachev@gmail.com" autocomplete="off" required>
+        <label><span class="form__label form__label--contact">E-mail:<sup>*</sup></span>
+          <input class="form__input form__input--contact" type="email" name="email" placeholder="kuklachev@gmail.com" autocomplete="on" required>
+        </label>
+        <label><span class="form__label form__label--contact">Телефон:<sup>*</sup></span>
+          <input class="form__input form__input--contact" type="tel" name="tel" placeholder="8(960)900-60-90" autocomplete="on" required>
         </label>
       </fieldset>
+
+
+      <fieldset class="form__fieldset form__fieldset--comment">
+        <legend class="form__legend">Комментарий</legend>
+        <textarea class="form__input form__input--comment" name="comment" rows="10" placeholder="Расскажите обо всех повадках кота" autocomplete="off"></textarea>
+      </fieldset>
+
+      <fieldset class="form__fieldset form__fieldset--checkbox">
+        <legend class="form__legend">Дополнительно</legend>
+        <label>
+          <input class="form__input form__input--checkbox" type="checkbox" name="sweetener" checked>
+          <span class="form__label form__label--checkbox">Сахарозаменитель</span>
+        </label>
+        <label>
+          <input class="form__input form__input--checkbox" type="checkbox" name="water">
+          <span class="form__label form__label--checkbox">Питьевая вода</span>
+        </label>
+        <label>
+          <input class="form__input form__input--checkbox" type="checkbox" name="milk">
+          <span class="form__label form__label--checkbox">Молоко</span>
+        </label>
+        <label>
+          <input class="form__input form__input--checkbox" type="checkbox" name="vitamins">
+          <span class="form__label form__label--checkbox">Витамины</span>
+        </label>
+      </fieldset>
+
+      <div class="program-selecting__submit-wrapper">
+        <input class="program-selecting__button button" type="submit" value="Отправить заявку">
+        <small class="program-selecting__remark"><sup>*</sup>- Обязательные поля</small>
+      </div>
     </form>
   </section>
 </main>
