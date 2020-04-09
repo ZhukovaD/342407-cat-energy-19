@@ -1,0 +1,43 @@
+.program{
+  width: @mobile-width;
+  margin: 0 auto;
+  padding-top: 1px;
+}
+
+.program__item{
+  box-sizing: border-box;
+  min-height: 267px;
+  margin: 0 auto;
+  background-color: @bg-dark-color;
+  width: 280px;
+  padding: 30px 20px 20px 20px;
+}
+
+.program__item:not(:last-of-type){
+  margin-bottom: 18px;
+}
+
+.program__title{
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: @subtitle-size;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-left: 70px;
+  padding-bottom: 31px;
+}
+
+.program__description{
+  padding-bottom: 22px;
+  border-bottom: solid 1px @border-color;
+  line-height: 1.3em;
+}
+
+.program__link{
+  display: block;
+  font-family: @title-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color:@text-color;
+  margin-top: 14px;
+}
