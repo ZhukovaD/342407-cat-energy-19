@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  width: 240px;
+  padding: 10px 20px;
+
+  border: none;
+
+  font-family: @title-font;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: @base-color;
+  color: @text-additional-color;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: @base-color-darker;
+  }
+
+  &:active {
+    color: hsl(@text-additional-color, 20%);
+  }
+}

@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
 
-      <a class="page-header__logo" href="#">
-        <img src="#" class="page-header__logo-image" width="100" height="100" alt="Кэт Энерджи">
-      </a>
+      <div class="page-header__logo">
+        <img src="img/logo-mobile.svg" class="page-header__logo-image" width="195" height="60" alt="Кэт Энерджи">
+      </div>
 
-
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
 
         <ul class="main-nav__list site-list">
@@ -31,30 +32,38 @@
 
     </header>
     <main class="page-main">
+
       <section class="main-banner">
-        <h1 class="main-banner__main-title">
-          Функциональное питание для котов
-        </h1>
-        <p class="main-banner__description">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="main-banner__image" src="#" alt="Банка питания для котов">
+        <div class="main-banner__banner">
+          <h1 class="main-banner__main-title">
+            Функциональное питание для котов
+          </h1>
+          <p class="main-banner__description">
+            Занялся собой? Займись котом!
+          </p>
+          <img class="main-banner__image" src="img/index-can-mobile@1x.png" height="271" width="280" alt="Банка питания для котов">
+        </div>
+
         <a class="main-banner__button button" href="#">Подобрать программу</a>
       </section>
+
       <section class="program">
         <h2 class="visually-hidden">Наши программы питания</h2>
         <article class="program__item program__item--slim">
           <h3 class="program__title">Похудение</h3>
-          <p class="program__description"> блаблаблаблаблаблаларврылвл</p>
+          <p class="program__description"> Ваш кот весит больше собаки и почти утратил способность лазить
+            по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог Slim</a>
         </article>
         <article class="program__item program__item--pro">
           <h3 class="program__title">Набор массы</h3>
-          <p class="program__description"> блаблаблаблаблаблаларврылвл</p>
+          <p class="program__description"> Ваш кот весит больше собаки и почти утратил способность лазить
+            по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог Pro</a>
         </article>
       </section>
       <section class="about">
+        <h2 class="about__title">Как это работает</h2>
         <ul class="about__list">
           <li class="about__item about__item--composition">
             <p class="about__description">Функциональное питание содержит только полезные и питательные вещества</p>
@@ -87,37 +96,56 @@
           <span class="progress-bar__word">Стало</span>
         </p>
       </section>
-      <section class="contacts">
-        <div class="collaboration">
-          <p class="collaboration__title">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="collaboration__contacts">ул. Большая Конюшенная, д.19/8<br> Санкт-Петербург</p>
-        </div>
-        <div class="map"></div>
-      </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo" href="#">
-        <img src="#" class="page-footer__logo-image" width="100" height="100" alt="Кэт Энерджи">
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--vk">
-          <a href="#" title="Вконтакте"></a>
-        </li>
-        <li class="social__item social__item--inst">
-          <a href="#" title="Инстаграм"></a>
-        </li>
-        <li class="social__item social__item--fb">
-          <a href="#" title="Фейсбук"></a>
-        </li>
-      </ul>
-      <div class="developer">
-        <p class="developer__name">HTML Academy</p>
-        <a class="developer__logo">
-          <img src="#" class="developer__logo-image" width="100" height="100" alt="HTML Academy">
+      <section class="contact contact--index">
+        <div class="contact__collaboration">
+          <p class="contact__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contact__adress">ул. Большая Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+        </div>
+        <div class="contact__map"></div>
+      </section>
+      <section class="footer">
+        <a class="footer__logo" href="#">
+          <img src="img/logo-footer.svg" class="footer__logo-image" width="130" height="50" alt="Кэт Энерджи">
         </a>
-      </div>
+        <ul class="footer__social social">
+          <li class="social__item social__item--vk">
+            <a href="#" title="Вконтакте"></a>
+          </li>
+          <li class="social__item social__item--inst">
+            <a href="#" title="Инстаграм"></a>
+          </li>
+          <li class="social__item social__item--fb">
+            <a href="#" title="Фейсбук"></a>
+          </li>
+        </ul>
+        <div class="footer__developer">
+          <p class="footer__developer-name">HTML Academy</p>
+          <a class="footer__developer-logo">
+            <img src="img/htmlacademy.svg" class="footer__developer-logo-image" width="50" height="40" alt="HTML Academy">
+          </a>
+        </div>
+      </section>
 
     </footer>
+
+    <script>
+        var navMain = document.querySelector('.main-nav');
+        var navToggle = document.querySelector('.main-nav__toggle');
+
+        navMain.classList.remove('main-nav--nojs');
+
+        navToggle.addEventListener('click', function () {
+            if (navMain.classList.contains('main-nav--closed')) {
+                navMain.classList.remove('main-nav--closed');
+                navMain.classList.add('main-nav--opened');
+            } else {
+                navMain.classList.add('main-nav--closed');
+                navMain.classList.remove('main-nav--opened');
+            }
+        });
+    </script>
 
   </body>
 </html>
