@@ -1,0 +1,35 @@
+.special-offer {
+  height: 287px;
+  width: 280px;
+  margin: 40px auto 37px auto;
+  background-color: @base-color;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.special-offer__description {
+  position: relative;
+  width: 170px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  font-size: @bigger-text-size;
+  line-height: 1.3em;
+  color: @text-additional-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -93px;
+    margin-right: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+}

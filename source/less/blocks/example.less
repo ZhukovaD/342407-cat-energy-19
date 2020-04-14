@@ -1,6 +1,72 @@
 .example {
   width: @mobile-width;
   margin: 0 auto;
+  box-sizing: border-box;
   height: 705px;
-  border: solid 1px red;
+  padding: 20px;
+  background-color: @bg-dark-color;
+}
+
+.example__title {
+  font-family: @title-font;
+  font-size: @title-size;
+  font-weight: normal;
+  padding-bottom: 30px;
+}
+
+.example__description {
+  line-height: 1.3em;
+  padding: 0 10px 10px 0;
+}
+
+.example__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top: 15px;
+}
+
+.example__progress {
+  height: 50px;
+  width: 120px;
+  border: solid 1px @text-color;
+  border-radius: 3px;
+}
+
+.example__progress-title {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+
+  font-family: @title-font;
+  font-size: @subtitle-size;
+
+  text-transform: uppercase;
+}
+
+.example__progress-description {
+  display: block;
+  height: 30px;
+  width: 70px;
+
+  margin: auto;
+
+  font-size: @smallest-text-size;
+  text-align: center;
+  background-color: @bg-dark-color;
+}
+
+.example__total-price {
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+
+  font-family: @title-font;
+
+  text-transform: uppercase;
+}
+
+.example__progressbar {
+  margin-top: 33px;
 }
