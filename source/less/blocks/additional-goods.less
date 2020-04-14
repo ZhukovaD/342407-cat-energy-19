@@ -1,0 +1,24 @@
+.additional-goods {
+  width: @mobile-width;
+  margin: 0 auto;
+}
+
+.additional-goods__title {
+  position: relative;
+  font-family: @title-font;
+  font-weight: normal;
+  font-size: @subtitle-size;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  padding-top: 23px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 53px;
+    top: calc(50% - 3px);
+    right: 0;
+    background-color: @base-color;
+  }
+}

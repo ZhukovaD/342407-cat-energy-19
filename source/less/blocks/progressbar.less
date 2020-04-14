@@ -1,0 +1,53 @@
+.progressbar {
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.progressbar__photo {
+  height: 250px;
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 320px;
+  background-position: -20px 0;
+}
+
+.progressbar__wrapper {
+  width: 200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.progressbar__word {
+  font-family: @title-font;
+  font-size: @bigger-text-size;
+
+  text-transform: uppercase;
+}
+
+.progressbar__bar {
+  align-self: center;
+  position: relative;
+
+  height: 12px;
+  width: 85px;
+
+  border: solid 1px @border-color;
+  border-radius: 12px;
+  background-color: @base-additional-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 10px;
+    height: 7px;
+    width: 35px;
+    background-color: @base-color;
+    border-radius: 5px;
+  }
+}

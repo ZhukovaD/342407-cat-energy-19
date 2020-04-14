@@ -1,0 +1,204 @@
+.form__fieldset {
+  box-sizing: border-box;
+  padding: 8px 15px 8px 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 13px;
+  position: relative;
+  border-color: transparent;
+
+  &--radio {
+    border: solid 1px @border-color;
+    padding-top: 20px;
+    padding-left: 17px;
+
+    margin-bottom: 30px;
+  }
+
+  &--contact {
+    margin-bottom: 17px;
+  }
+
+  &--checkbox {
+    margin-bottom: 10px;
+  }
+}
+
+.form__fieldset label {
+  display: flex;
+  align-items: center;
+}
+
+.form__fieldset--person label:not(:last-of-type) {
+  margin-bottom: 14px;
+}
+
+.form__fieldset--radio label {
+  margin-bottom: 12px;
+}
+
+.form__fieldset--contact label:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.form__fieldset--checkbox label {
+  margin-bottom: 13px;
+}
+
+.form__legend {
+  display: block;
+  padding-right: 20px;
+  font-family: @title-font;
+  font-size: @subtitle-size;
+  line-height: 1em;
+  background-color: @base-additional-color;
+  position: relative;
+  margin-bottom: 26px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    width: 300px;
+    background-color: @base-color;
+    z-index: -10;
+  }
+}
+
+.form__label {
+  padding-right: 15px;
+  padding-bottom: 7px;
+  font-family: @title-font;
+  font-size: @bigger-text-size;
+  text-transform: uppercase;
+
+  &--radio,
+  &--checkbox {
+    padding-bottom: 0;
+  }
+}
+
+.form__input {
+  border: solid 1px @border-color;
+  padding: 14px;
+  padding-top: 16px;
+
+  &::placeholder {
+    font-family: @title-font;
+    font-size: @bigger-text-size;
+    font-weight: normal;
+    color: @text-color;
+    text-transform: uppercase;
+  }
+
+  &--person,
+  &--contact {
+    flex-grow: 1;
+  }
+
+  &--comment {
+    width: 100%;
+    box-sizing: border-box;
+    margin-right: 30px;
+    padding-top: 10px;
+  }
+}
+
+
+//Стилизация псевдоэлемента - радио-кнопки
+.radio-custom {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 28px;
+  height: 28px;
+  background-color: @base-additional-color;
+  border: solid 1px @border-color;
+  position: relative;
+  cursor: pointer;
+}
+
+.form__input--radio:active + .radio-custom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  background-color: rgb(147, 147, 147);
+}
+
+.form__input--radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  background-color: @base-color;
+}
+
+.radio-custom,
+.form__input--radio:checked + .radio-custom::before,
+.form__input--radio:active + .radio-custom::after {
+  border-radius: 50%;
+}
+
+.radio-custom:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.radio-custom:active {
+  background-color: rgb(203, 203, 203);
+}
+
+//Стилизация псевдоэлемента - чекбокса
+.checkbox-custom {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  width: 28px;
+  height: 28px;
+  background-color: @base-additional-color;
+  border: solid 1px @border-color;
+  position: relative;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.form__input--checkbox:active + .checkbox-custom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: url("../img/icon-tick.svg") 50% 50% no-repeat;
+}
+
+.form__input--checkbox:checked + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  background: url("../img/icon-tick.svg") 50% 50% no-repeat;
+}
+
+.checkbox-custom:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.checkbox-custom:active {
+  background-color: rgb(203, 203, 203);
+}
